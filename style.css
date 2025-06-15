@@ -1,0 +1,1011 @@
+/* Mantém apenas estilos usados nas seções e elementos ativos */
+:root {
+    --primaria: #F3E3D5;
+    --secundaria: #c0ad93;
+    --texto: #625751;
+    --marcadorTexto:#ab5858;
+    --quarto: #f3e6da;
+    --quinto: #c1af95;
+    --escuro: #46220F;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
+    --mensagem: #99835e
+}
+body {
+    background-color: var(--primaria) !important;
+}
+.logo {
+    width: 350px;
+    height: auto;
+    position: relative;
+    margin-top:100px;
+}
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cabecalhoTitle {
+    font-size: 6rem;
+    color: var(--escuro);
+    font-weight: bold;
+    margin: 20px;
+}
+.cabecalhoSubtitle {
+    font-size: 2rem;
+    color: var(--quinto);
+    font-weight: 500;
+    margin: 10px;
+    text-align: center;
+}
+.cabecalhoDescricao {
+    font-size: 2rem;
+    font-family: poppins, sans-serif;
+    color: var(--texto);
+    text-align: center;
+    max-width: 800px;
+    margin-top: 100px;
+}
+
+/* ===================== CABEÇALHO ===================== */
+
+/* ===================== SOBRE ===================== */
+#sobre {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+.sobreTitle {
+    font-size: 2.5rem;
+    color: var(--escuro);
+    margin-bottom: 30px;
+    text-align: center;
+}
+.sobre-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+.sobreImagem {
+    max-width: 400px;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.sobreTexto {
+    max-width: 600px;
+    font-size: 1.8rem;
+    color: var(--texto);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+}
+.marcador {
+    color: var(--marcadorTexto);
+    font-weight: bold;
+}
+
+/* ===================== RESULTADOS ===================== */
+.resultados {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent !important;
+    padding: 40px 0;
+}
+.resultadosTitle {
+    font-size: 2.2rem;
+    color: var(--escuro);
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.resultados-content {
+    max-width: 700px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--texto);
+    margin-bottom: 32px;
+}
+.resultadosSubTitle {
+    font-size: 1.3rem;
+    color: var(--escuro);
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 500;
+}
+.graficos-circulares {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.grafico-linha {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+}
+.grafico-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grafico-circular {
+    margin-bottom: 8px;
+    transform: rotate(-90deg);
+}
+.grafico-bg {
+    stroke: #eee;
+}
+.grafico-bar {
+    stroke: var(--marcadorTexto);
+    transition: stroke-dashoffset 1s;
+}
+.grafico-label {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--escuro);
+    font-weight: bold;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.resultados-destaque {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--escuro);
+    margin: 32px 0 16px 0;
+    font-weight: bold;
+}
+.resultados-destaque strong {
+    color: var(--marcadorTexto);
+}
+.resultados-footer {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--texto);
+    margin-bottom: 10px;
+}
+
+/* ===================== EXPERIÊNCIA ===================== */
+.experiencia {
+    position: relative;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: var(--primaria);
+    background-blend-mode: lighten;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.experienciaTitle {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+    text-align: center;
+    font-size: 3.2rem;
+    color: var(--marcadorTexto);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.experiencia-topicos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.topico {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: rgba(255,255,255,0.8);
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 32px 28px;
+    min-width: 260px;
+    max-width: 320px;
+    flex: 1 1 260px;
+    gap: 18px;
+    margin: 0 auto;
+}
+.topico-numero {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--marcadorTexto);
+    line-height: 1;
+    margin-right: 12px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+}
+.topico-texto {
+    font-size: 1.25rem;
+    color: var(--escuro);
+    font-weight: 500;
+    line-height: 1.3;
+    display: block;
+}
+
+/* ===================== ESTILO E FORMATO ===================== */
+.estilo-formato {
+    padding: 64px 0 64px 0;
+    background: var(--primaria);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.estilo-formato-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+}
+.estilo-formato-titlebox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 48px;
+    max-width: 900px;
+}
+.estilo-formato-img {
+    width: 180px;
+    height: 180px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 4px 16px rgba(171,88,88,0.10);
+    object-fit: cover;
+    border: 4px solid var(--marcadorTexto);
+    background: #fff;
+    display: block;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+.estilo-formato-title {
+    font-size: 2.1rem;
+    color: var(--marcadorTexto);
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(171,88,88,0.07);
+}
+.estilo-formato-listabox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.estilo-formato-lista {
+    margin: 0 0 4px 0;
+    padding: 0;
+    max-width: 700px;
+    font-size: 1.15rem;
+    color: var(--texto);
+    list-style: disc inside;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    text-align: left;
+}
+.estilo-formato-lista li {
+    line-height: 1.4;
+    font-family: inherit;
+    font-weight: 400;
+    background: none;
+    border: none;
+    padding: 0;
+}
+.estilo-formato .relatorio-caixa {
+    margin-top: 24px;
+    background: linear-gradient(120deg, #fff7e6 60%, #f3e6da 100%);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(171,88,88,0.10);
+    padding: 18px 18px 12px 18px;
+    max-width: 520px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border: 1.5px solid var(--marcadorTexto);
+}
+.estilo-formato .relatorio-caixa-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 18px;
+}
+.estilo-formato .relatorio-titulo-icones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0;
+    justify-content: center;
+    width: auto;
+}
+.estilo-formato .relatorio-titulo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--marcadorTexto);
+    margin: 0 auto 4px auto;
+    text-align: center;
+    display: block;
+}
+.estilo-formato .relatorio-icones-colunas {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+.estilo-formato .relatorio-icones-linha {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+.estilo-formato .icone-pessoa {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+.estilo-formato .relatorio-descritivo {
+    margin: 18px auto 0 auto;
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+}
+.estilo-formato .relatorio-paragrafo {
+    font-size: 1.05rem;
+    color: var(--escuro);
+    margin: 0 0 4px 0;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+}
+.estilo-formato .relatorio-lista {
+    margin: 0 0 4px 0;
+    padding: 0;
+    font-size: 1rem;
+    color: var(--texto);
+    list-style: disc inside;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    text-align: left;
+}
+.estilo-formato .relatorio-lista li {
+    line-height: 1.4;
+    font-family: inherit;
+    font-weight: 400;
+    width: 100%;
+    max-width: 420px;
+    text-align: left;
+}
+
+/* ===================== FORMULÁRIO QRCODE ===================== */
+.formulario-qrcode {
+    width: 100%;
+    background: var(--primaria);
+    padding: 64px 0 64px 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-top: 2px solid #e5d2b8;
+}
+.formulario-qrcode .formulario-title {
+    font-size: 2.3rem;
+    color: var(--marcadorTexto);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 36px;
+    line-height: 1.1;
+}
+.formulario-qrcode .formulario-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+.formulario-qrcode .formulario-item {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(171,88,88,0.10);
+    padding: 32px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    min-width: 180px;
+    max-width: 300px;
+    margin: 0 auto;
+    gap: 18px;
+}
+.formulario-qrcode .formulario-item-title {
+    font-size: 1.35rem;
+    color: var(--escuro);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+.formulario-qrcode .formulario-img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    background: #f3e6da;
+    border: 2px solid var(--quinto);
+    box-shadow: 0 2px 8px rgba(171,88,88,0.07);
+}
+.formulario-qrcode .formulario-texto {
+    font-size: 1.15rem;
+    color: var(--texto);
+    margin-right: 2px;
+}
+.formulario-qrcode .formulario-link {
+    font-size: 1.15rem;
+    color: var(--marcadorTexto);
+    font-weight: 600;
+    text-decoration: underline;
+    margin-left: 2px;
+    transition: color 0.2s;
+}
+.formulario-qrcode .formulario-link:hover {
+    color: var(--escuro);
+}
+.formulario-qrcode .formulario-item-solo {
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 260px;
+    max-width: 300px;
+    padding: 32px 24px 24px 24px;
+}
+@media (max-width: 900px) {
+    .formulario-qrcode .formulario-title {
+        font-size: 1.5rem;
+    }
+    .formulario-qrcode .formulario-grid {
+        flex-direction: column;
+        gap: 24px;
+        max-width: 98vw;
+        margin-bottom: 16px;
+    }
+    .formulario-qrcode .formulario-item, .formulario-qrcode .formulario-item-solo {
+        width: 95vw;
+        max-width: 98vw;
+        min-width: 0;
+        padding: 24px 8vw 18px 8vw;
+    }
+    .formulario-qrcode .formulario-img {
+        width: 120px;
+        height: 120px;
+    }
+    .formulario-qrcode .formulario-item-title,
+    .formulario-qrcode .formulario-texto,
+    .formulario-qrcode .formulario-link {
+        font-size: 1.05rem;
+    }
+}
+@media (max-width: 700px) {
+    .formulario-qrcode {
+        padding: 10px 0 10px 0;
+        max-width: 99vw;
+    }
+    .formulario-qrcode .formulario-title {
+        font-size: 1.1rem;
+    }
+    .formulario-qrcode .formulario-grid {
+        flex-direction: column;
+        gap: 10px;
+        max-width: 99vw;
+        margin-bottom: 8px;
+    }
+    .formulario-qrcode .formulario-item, .formulario-qrcode .formulario-item-solo {
+        width: 90vw;
+        max-width: 99vw;
+        min-width: 0;
+        padding: 8px 2vw 6px 2vw;
+    }
+    .formulario-qrcode .formulario-img {
+        width: 80px;
+        height: 80px;
+    }
+    .formulario-qrcode .formulario-item-title,
+    .formulario-qrcode .formulario-texto,
+    .formulario-qrcode .formulario-link {
+        font-size: 0.95rem;
+    }
+}
+
+/* ===================== DESAFIOS E SOLUÇÕES ===================== */
+.desafios-solucoes-title {
+    font-size: 2.3rem;
+    color: var(--marcadorTexto);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 48px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.desafios-caixa {
+    background: var(--quinto);
+    border-left: 4px solid var(--secundaria);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(192,173,147,0.10);
+    padding: 22px 18px;
+    font-size: 1.08rem;
+    color: var(--texto);
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 0;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.solucoes-caixa {
+    background: #f3e6da;
+    border-left: 4px solid var(--marcadorTexto);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(171,88,88,0.10);
+    padding: 22px 18px;
+    font-size: 1.08rem;
+    color: var(--texto);
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    font-weight: 500;
+    margin-bottom: 18px;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.seta-box {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seta {
+    font-size: 2.2rem;
+    color: var(--marcadorTexto);
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Centraliza verticalmente e horizontalmente as setas entre as caixas */
+.seta-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    min-width: 40px;
+    height: 100%;
+}
+.seta {
+    font-size: 2.2rem;
+    color: var(--marcadorTexto);
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Alinha cada par desafio/solução lado a lado */
+.desafio-solucao-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.desafios-solucoes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.desafios-solucoes-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+}
+.desafios-label, .solucoes-label {
+    display: none;
+}
+@media (max-width: 900px) {
+    .desafio-solucao-row {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+    .desafios-caixa, .solucoes-caixa {
+        min-height: 60px;
+    }
+    .seta-box {
+        display: none;
+    }
+}
+
+/*
+Garante que todas as caixas de desafios e soluções tenham o mesmo tamanho (altura mínima e altura igual por flex)
+*/
+.desafio-solucao-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+.desafios-caixa, .solucoes-caixa {
+    flex: 1 1 0;
+    min-height: 140px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+/* Centraliza as setas exatamente no centro vertical das caixas, mesmo com conteúdos de alturas diferentes */
+.desafio-solucao-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 18px;
+    width: 100%;
+    position: relative;
+}
+.seta-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    min-width: 40px;
+    height: auto;
+    position: relative;
+}
+.seta {
+    font-size: 2.2rem;
+    color: var(--marcadorTexto);
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+@media (max-width: 900px) {
+    .seta-box {
+        display: none;
+    }
+    .seta {
+        position: static;
+        transform: none;
+    }
+}
+
+/* ===================== IDENTIDADE DA MARCA ===================== */
+.identidade-marca {
+    width: 100%;
+    background: var(--primaria);
+    padding: 48px 0 48px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.identidade-title {
+    font-size: 2.2rem;
+    color: var(--marcadorTexto);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 36px;
+    letter-spacing: 1px;
+}
+.identidade-bloco {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--quinto); /* cor de fundo alterada para o padrão da landing */
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(171,88,88,0.07);
+    padding: 24px 28px 18px 28px;
+    gap: 10px;
+}
+.identidade-subtitulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+.identidade-icone {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    box-shadow: 0 1px 4px rgba(171,88,88,0.07);
+}
+.identidade-label {
+    font-size: 1.25rem;
+    color: var(--escuro);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.identidade-texto {
+    font-size: 1.08rem;
+    color: var(--texto);
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+}
+@media (max-width: 900px) {
+    .identidade-title {
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+    }
+    .identidade-bloco {
+        max-width: 98vw;
+        padding: 14px 6vw 10px 6vw;
+        margin-bottom: 18px;
+    }
+    .identidade-label {
+        font-size: 1.05rem;
+    }
+    .identidade-icone {
+        width: 24px;
+        height: 24px;
+    }
+    .identidade-texto {
+        font-size: 0.98rem;
+    }
+}
+
+/* ===================== QUEM SOU ===================== */
+.quem-sou {
+    width: 100%;
+    background: var(--primaria);
+    padding: 80px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.quem-sou-title {
+    font-size: 3.2rem;
+    color: var(--marcadorTexto);
+    font-family: 'Pacifico', 'Caveat', 'Dancing Script', cursive, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 56px;
+    letter-spacing: 1.5px;
+}
+.quem-sou-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    width: 100%;
+    max-width: 1400px;
+}
+.quem-sou-img {
+    width: 420px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 160px 60px 160px 60px;
+    box-shadow: 0 8px 32px rgba(171,88,88,0.18);
+    border: 7px solid var(--quinto);
+    background: #fff;
+    display: block;
+}
+.quem-sou-texto {
+    max-width: 800px;
+    font-size: 1.55rem;
+    color: var(--texto);
+    line-height: 2.1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0;
+}
+.quem-sou-texto .marcador {
+    color: var(--marcadorTexto);
+    font-weight: bold;
+    background: none;
+    font-size: 1.6rem;
+}
+@media (max-width: 1200px) {
+    .quem-sou-content {
+        gap: 32px;
+        max-width: 98vw;
+    }
+    .quem-sou-img {
+        width: 320px;
+        height: 420px;
+        border-radius: 100px 40px 100px 40px;
+    }
+    .quem-sou-texto {
+        font-size: 1.18rem;
+        max-width: 98vw;
+    }
+    .quem-sou-texto .marcador {
+        font-size: 1.22rem;
+    }
+}
+@media (max-width: 900px) {
+    .quem-sou-title {
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+    .quem-sou-content {
+        flex-direction: column;
+        gap: 18px;
+        max-width: 99vw;
+        align-items: center;
+    }
+    .quem-sou-img {
+        width: 90vw;
+        height: 260px;
+        max-width: 340px;
+        min-width: 120px;
+        border-radius: 60px 20px 60px 20px;
+    }
+    .quem-sou-texto {
+        font-size: 1.02rem;
+        max-width: 99vw;
+    }
+    .quem-sou-texto .marcador {
+        font-size: 1.08rem;
+    }
+}
+
+/* ===================== MENSAGEM ===================== */
+.mensagem-section {
+    width: 100%;
+    background: var(--mensagem);
+    padding: 32px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    min-height: 50vh;
+    position: relative;
+    max-width: 100vw;
+}
+.mensagem-img-top {
+    width: 380px;
+    height: auto;
+    display: block;
+    margin: 0 auto 24px auto;
+}
+.mensagem-texto {
+    color: var(--quarto);
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 32px auto;
+    font-weight: 500;
+    line-height: 1.4;
+    white-space: pre-line;
+}
+.mensagem-img-bottom {
+    width: 240px;
+    height: auto;
+    display: block;
+    margin: 32px auto 0 auto;
+    position: relative;
+    bottom: 0;
+}
+@media (max-width: 900px) {
+    .mensagem-section {
+        padding: 16px 0 0 0;
+    }
+    .mensagem-img-top {
+        width: 180px;
+        margin-bottom: 16px;
+    }
+    .mensagem-texto {
+        font-size: 1.05rem;
+        max-width: 95vw;
+        margin-bottom: 18px;
+    }
+    .mensagem-img-bottom {
+        width: 100px;
+        margin-top: 18px;
+    }
+}
